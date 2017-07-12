@@ -1,0 +1,16 @@
+{
+  "name": "uptime-monitoring",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ben Gardner <ben@focuswish.com> (http://www.automationfuel.com)",
+  "license": "ISC",
+  "dependencies": {
+    "isomorphic-fetch": "^2.2.1",
+    "node-schedule": "^1.2.3",
+    "twilio": "^3.4.0"
+  }
+}
