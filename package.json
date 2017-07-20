@@ -7,8 +7,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "NODE_ENV=dev node index.js",
-    "start": "NODE_ENV=production index.js"
+    "dev": "NODE_ENV=dev node ./index.js",
+    "start": "NODE_ENV=production node ./index.js"
   },
   "author": "Ben Gardner <ben@focuswish.com> (http://www.automationfuel.com)",
   "license": "ISC",
