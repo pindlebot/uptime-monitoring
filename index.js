@@ -4,7 +4,7 @@ require('isomorphic-fetch')
 if(process.env.NODE_ENV === 'dev') { require('env2')('.env') }
 const config = require('./config')
 
-const sites = ['http://www.example.com']
+const sites = ['http://www.examplsdfsde.com']
 var twilioClient = new twilio(config.accountSid, config.authToken);
 
 const sendMessage = async (site) => {
@@ -29,5 +29,4 @@ const run = async () => {
   }
 }
 
-//schedule.scheduleJob('*/1 * * * *', () => { run() })
-run()
+schedule.scheduleJob('*/1 * * * *', () => { run() })
