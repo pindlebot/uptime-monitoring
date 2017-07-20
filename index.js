@@ -34,7 +34,7 @@ schedule.scheduleJob('*/1 * * * *', () => { run() })
 
 const app = express()
 
-app.get('/', function(req, res) {
+app.get('/', async (req, res) => {
   var results = await run()
   res.json(results)
 });
