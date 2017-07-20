@@ -7,8 +7,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "NODE_ENV=dev node ./index.js",
-    "start": "NODE_ENV=production node ./index.js"
+    "dev": "NODE_ENV=dev node ./src/index.js",
+    "start": "NODE_ENV=production node ./src/index.js",
+    "build": "babel src -d build"
   },
   "author": "Ben Gardner <ben@focuswish.com> (http://www.automationfuel.com)",
   "license": "ISC",
@@ -18,5 +19,8 @@
     "isomorphic-fetch": "^2.2.1",
     "node-schedule": "^1.2.3",
     "twilio": "^3.5.0"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-async-to-generator": "^6.24.1"
   }
 }

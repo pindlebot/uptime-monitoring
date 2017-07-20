@@ -13,7 +13,7 @@ const sendMessage = async (site) => {
     body: `${site} is down!`,
     to: config.recipientNumber, 
     from: config.twilioNumber
-  }) 
+  })
 }
 
 const run = async () => {
@@ -24,9 +24,11 @@ const run = async () => {
       results.push(`${sites[i]} is OK`)
     } else {
       // Site is down; send an SMS
-      results.push(await sendMessage(sites[i]))
+      var msg = await sendMessage(sites[i])
+      results.push(`${sites[i]} is Down. SMS status: ${msg.status}`)
     }
   }
+  console.log(results)
   return results
 }
 
