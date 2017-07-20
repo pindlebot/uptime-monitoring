@@ -36,7 +36,7 @@ const app = express()
 
 app.get('/', async (req, res) => {
   var results = await run()
-  res.json(results)
+  res.json({results})
 });
 
 app.listen(process.env.PORT || 3000);
