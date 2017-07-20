@@ -19,8 +19,8 @@ const sendMessage = async (site) => {
 const run = async () => {
   let results = []
   for(let i in sites) {
-    var resp = await fetch(sites[i]).catch(err => console.log(err))
-    if(resp.status >= 200 && resp.status < 300) {
+    var resp = await fetch(sites[i]).catch(err => { return err })
+    if(resp && resp.status >= 200 && resp.status < 300) {
       results.push(`${sites[i]} is OK`)
     } else {
       // Site is down; send an SMS
