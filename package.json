@@ -4,13 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "NODE_ENV=dev node index.js"
   },
   "author": "Ben Gardner <ben@focuswish.com> (http://www.automationfuel.com)",
   "license": "ISC",
   "dependencies": {
+    "env2": "^2.2.0",
     "isomorphic-fetch": "^2.2.1",
     "node-schedule": "^1.2.3",
-    "twilio": "^3.4.0"
+    "twilio": "^3.5.0"
   }
 }
