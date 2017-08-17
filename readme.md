@@ -1,5 +1,7 @@
 ## uptime-monitoring
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/focuswish/uptime-monitoring.svg)](https://greenkeeper.io/)
+
 
 ## Install
 
